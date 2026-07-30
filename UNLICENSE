@@ -22,13 +22,3 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org/>
-
----
-
-NOTE ON SCOPE
-
-This dedication covers the original code and assets in this repository.
-It does not, and cannot, cover third-party material that this mod merely
-depends on or interoperates with: the Minecraft client, NeoForge, and any
-mod whose blocks, items or APIs this mod references. Those remain under
-their own licences and are not redistributed here.

@@ -1,0 +1,12 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original code and assets in this
+repository.
+
+It does not, and cannot, cover third-party material that this project merely
+depends on or interoperates with — the Minecraft client, NeoForge, and any mod
+whose blocks, items or APIs are referenced here. Those remain under their own
+licences and none of their content is redistributed in this repository.
+
+Compile-time dependencies are resolved from public mavens (Modrinth, NeoForged,
+Architectury, FTB) at build time. No third-party jar is committed.
