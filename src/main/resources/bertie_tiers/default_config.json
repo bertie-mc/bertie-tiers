@@ -1,0 +1,1524 @@
+{
+  "_comment": [
+    "Bertie Tiers - the authoritative mining-tier table. Edit freely and apply with /bertietiers reload.",
+    "Levels are spaced by 100 so a new tier can be slotted between two existing ones without renumbering.",
+    "Shipped contents: every vanilla ore at the tier vanilla itself requires, every vanilla pickaxe,",
+    "and every Slag n' Embers pickaxe-capable modular tool at the tier Slag itself gives its head material.",
+    "Entries whose mod is not installed are skipped at load with a note in the log, so this file is valid",
+    "with or without Slag n' Embers.",
+    "A block that is not listed here is left completely alone; a tool that is not listed here cannot",
+    "harvest any block that IS listed."
+  ],
+  "tiers": [
+    {
+      "_comment": "Bare-minimum pickaxes. Coal, nether gold and nether quartz.",
+      "id": "wood",
+      "level": 100,
+      "tools": [
+        {
+          "item": "minecraft:wooden_pickaxe"
+        },
+        {
+          "item": "minecraft:golden_pickaxe"
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:wooden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:wooden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:wooden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:wooden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:wooden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:wooden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:golden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:golden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:golden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:golden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:golden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:golden"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:flint"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:flint"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:flint"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:flint"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:flint"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:flint"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "blocks": [
+        "minecraft:coal_ore",
+        "minecraft:deepslate_coal_ore",
+        "minecraft:nether_gold_ore",
+        "minecraft:nether_quartz_ore"
+      ]
+    },
+    {
+      "_comment": "Copper, iron and lapis.",
+      "id": "stone",
+      "level": 200,
+      "tools": [
+        {
+          "item": "minecraft:stone_pickaxe"
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:stone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:stone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:stone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:stone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:stone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:stone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:copper"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:copper"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:copper"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:copper"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:copper"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:copper"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:lapis"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:lapis"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:lapis"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:lapis"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:lapis"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:lapis"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:amethyst"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:amethyst"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:amethyst"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:amethyst"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:amethyst"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:amethyst"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:bone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:bone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:bone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:bone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:bone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:bone"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "blocks": [
+        "minecraft:copper_ore",
+        "minecraft:deepslate_copper_ore",
+        "minecraft:iron_ore",
+        "minecraft:deepslate_iron_ore",
+        "minecraft:lapis_ore",
+        "minecraft:deepslate_lapis_ore"
+      ]
+    },
+    {
+      "_comment": "Gold, redstone, diamond and emerald.",
+      "id": "iron",
+      "level": 300,
+      "tools": [
+        {
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:iron"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:iron"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:iron"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:iron"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:iron"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:iron"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:rose_gold"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:rose_gold"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:rose_gold"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:rose_gold"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:rose_gold"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:rose_gold"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:quartz"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:quartz"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:quartz"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:quartz"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:quartz"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:quartz"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:deep_alloy"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:deep_alloy"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:deep_alloy"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:deep_alloy"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:deep_alloy"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:deep_alloy"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "blocks": [
+        "minecraft:gold_ore",
+        "minecraft:deepslate_gold_ore",
+        "minecraft:redstone_ore",
+        "minecraft:deepslate_redstone_ore",
+        "minecraft:diamond_ore",
+        "minecraft:deepslate_diamond_ore",
+        "minecraft:emerald_ore",
+        "minecraft:deepslate_emerald_ore"
+      ]
+    },
+    {
+      "_comment": "Ancient debris.",
+      "id": "diamond",
+      "level": 400,
+      "tools": [
+        {
+          "item": "minecraft:diamond_pickaxe"
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:emerald"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:emerald"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:emerald"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:emerald"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:emerald"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:emerald"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:diamond"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:diamond"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:diamond"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:diamond"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:diamond"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:diamond"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:obsidian"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:obsidian"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:obsidian"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:obsidian"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:obsidian"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:obsidian"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "blocks": [
+        "minecraft:ancient_debris"
+      ]
+    },
+    {
+      "_comment": "Nothing yet - the top of the ladder, ready for post-netherite ores.",
+      "id": "netherite",
+      "level": 500,
+      "tools": [
+        {
+          "item": "minecraft:netherite_pickaxe"
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:netherite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:netherite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:netherite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:netherite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:netherite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:netherite"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:pickaxe",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:echo"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:prybar",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:echo"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:mallet",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:echo"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:hammer",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:echo"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:maul",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:echo"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "item": "slag:modular_item",
+          "components": {
+            "slag:modular_type": "slag:paxel",
+            "slag:dynamic_parts": [
+              {
+                "components": {
+                  "slag:part_type": "slag:pickaxe_head",
+                  "slag:material_type": "slag:echo"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "blocks": []
+    }
+  ],
+  "exceptions": []
+}

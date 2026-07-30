@@ -1,0 +1,30 @@
+# --- Build / Gradle ---
+build/
+out/
+.gradle/
+
+# --- Run directories ---
+run/
+runs/
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+eclipse/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Third-party jars we must NOT redistribute ---
+libs/
+
+# --- Local decompiled / reference material (never publish) ---
+**/extracted/
+**/*-decompile/
+**/slag-decompile/
+**/decompiled-src/

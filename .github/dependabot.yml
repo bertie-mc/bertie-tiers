@@ -1,0 +1,38 @@
+version: 2
+updates:
+  # Gradle. Minecraft-ecosystem coordinates (Modrinth, FTB, Architectury) encode the
+  # Minecraft version and are NOT semver, so Dependabot proposes jars built for other
+  # Minecraft versions. This pack is pinned to 1.21.1 / NeoForge 21.1.217, so those
+  # bumps are never correct and are ignored wholesale.
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "build"
+      include: "scope"
+    ignore:
+      # Mod dependencies pulled from Modrinth/FTB/Architectury mavens: version strings
+      # carry the MC version, so any "upgrade" crosses Minecraft lines.
+      - dependency-name: "maven.modrinth:*"
+      - dependency-name: "dev.ftb.mods:*"
+      - dependency-name: "dev.architectury:*"
+      # Gradle wrapper is pinned to 8.8 by ModDevGradle 2.0.134. Gradle 9 is a major break.
+      - dependency-name: "gradle-wrapper"
+      # ModDevGradle itself is pinned across every bertie mod; bump it deliberately,
+      # in lockstep, not one repo at a time.
+      - dependency-name: "net.neoforged.moddev"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    groups:
+      # One grouped PR per repo instead of five separate action bumps.
+      github-actions:
+        patterns:
+          - "*"
