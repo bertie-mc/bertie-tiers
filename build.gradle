@@ -54,7 +54,7 @@ neoForge {
 dependencies {
     // Pure-logic unit tests. The resolver, the config parser/validator and the component
     // predicate are deliberately free of Minecraft types so they can be tested off-game.
-    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation platform('org.junit:junit-bom:6.1.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testImplementation 'com.google.code.gson:gson:2.10.1'
