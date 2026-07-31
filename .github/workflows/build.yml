@@ -11,18 +11,18 @@ permissions:
 
 jobs:
   build:
-    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.0.0
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.0.1
 
   gametest:
-    uses: bertie-mc/bertie-ci/.github/workflows/gametest.yml@v3.0.0
+    uses: bertie-mc/bertie-ci/.github/workflows/gametest.yml@v3.0.1
 
   client:
     needs: build
-    uses: bertie-mc/bertie-ci/.github/workflows/client.yml@v3.0.0
+    uses: bertie-mc/bertie-ci/.github/workflows/client.yml@v3.0.1
     with:
       artifact-name: ${{ needs.build.outputs.artifact-name }}
   server:
     needs: build
-    uses: bertie-mc/bertie-ci/.github/workflows/server.yml@v3.0.0
+    uses: bertie-mc/bertie-ci/.github/workflows/server.yml@v3.0.1
     with:
       artifact-name: ${{ needs.build.outputs.artifact-name }}
