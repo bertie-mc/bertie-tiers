@@ -156,9 +156,12 @@ Do not use `--force` to throw away work you have not looked at.
 
 These shortcuts feel faster and each one has caused a real incident:
 
-- **Do not copy a built jar into a Minecraft instance or into the packwiz pack.** A mod
-  that is not in a pack's `index.toml` does not exist for players or for a fresh install,
-  no matter what is sitting in an instance folder. The pack consumes GitHub Releases.
+- **Do not manually copy a built jar into a player instance or into the packwiz pack.** A
+  mod that is not in a pack's `index.toml` does not exist for players or for a fresh
+  install, no matter what is sitting in an instance folder. The pack consumes GitHub
+  Releases. The shared `bertie-ci` runner may stage the current build in its ignored,
+  ephemeral `.bertie-ci/` test instances; those files must never be committed or treated
+  as pack inputs.
 - **Do not edit another repository from this one.** If a change belongs to another mod,
   make it in that mod's repo and release it.
 - **Do not delete or rewrite another agent's work** to make your own change apply. If you

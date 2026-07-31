@@ -2,6 +2,7 @@
 build/
 out/
 .gradle/
+.bertie-ci/
 
 # --- Run directories ---
 run/
