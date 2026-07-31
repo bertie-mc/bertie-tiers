@@ -11,8 +11,7 @@ permissions:
 
 jobs:
   checks:
-    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@main
+    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@v2
     with:
       sides: both
       gametest: true
-      tool-ref: main
