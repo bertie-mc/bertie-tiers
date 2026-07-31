@@ -61,10 +61,10 @@ repositories {
         url = "https://github.com/bertie-mc"
         patternLayout { artifact "/[organisation]/releases/download/v[revision]/[module]-[revision].jar" }
         metadataSources { artifact() }
-        content { includeGroup "bertie-s1" }
+        content { includeGroup "bertie-progression" }
     }
 }
-dependencies { compileOnly "bertie-s1:bertie_s1:0.21.1" }
+dependencies { compileOnly "bertie-progression:bertie-progression:0.25.1" }
 ```
 
 **Test for whether you got it right:** could a fresh clone on a machine that has never
