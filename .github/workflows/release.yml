@@ -9,10 +9,10 @@ permissions:
 
 jobs:
   build:
-    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.1.1
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.4.1
 
   publish:
     needs: build
-    uses: bertie-mc/bertie-ci/.github/workflows/github-release.yml@v3.1.1
+    uses: bertie-mc/bertie-ci/.github/workflows/github-release.yml@v3.4.1
     with:
       artifact-name: ${{ needs.build.outputs.artifact-name }}
