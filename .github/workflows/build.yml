@@ -10,8 +10,19 @@ permissions:
   contents: read
 
 jobs:
-  checks:
-    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@v2
+  build:
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.0.0
+
+  gametest:
+    uses: bertie-mc/bertie-ci/.github/workflows/gametest.yml@v3.0.0
+
+  client:
+    needs: build
+    uses: bertie-mc/bertie-ci/.github/workflows/client.yml@v3.0.0
     with:
-      sides: both
-      gametest: true
+      artifact-name: ${{ needs.build.outputs.artifact-name }}
+  server:
+    needs: build
+    uses: bertie-mc/bertie-ci/.github/workflows/server.yml@v3.0.0
+    with:
+      artifact-name: ${{ needs.build.outputs.artifact-name }}
