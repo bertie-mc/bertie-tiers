@@ -1,4 +1,4 @@
-name: Build and runtime
+name: Build and test
 
 on:
   push:
@@ -10,7 +10,9 @@ permissions:
   contents: read
 
 jobs:
-  runtime:
-    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@v1
+  checks:
+    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@main
     with:
       sides: both
+      gametest: true
+      tool-ref: main
