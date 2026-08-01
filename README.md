@@ -215,14 +215,14 @@ Stated plainly rather than claimed away.
 ## Building
 
 ```bash
-gradlew build
+gradle build
 ```
 
 Runs the JUnit suite (30 tests: the decision order, the JSON predicate, every validation rule, and the
 shipped config validated both with and without Slag).
 
 ```bash
-gradlew runGameTestServer
+gradle runGameTestServer
 ```
 
 Boots a headless dedicated server and runs 14 GameTests that drive the real

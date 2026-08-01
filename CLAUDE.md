@@ -15,7 +15,7 @@ This repo is one mod in the **bertie** modpack family, published under the
 2. **Never vendor jars.** Dependencies resolve from public mavens (Modrinth, NeoForged,
    Architectury, FTB). No `files("libs/…")`, no `'../other-mod/libs/…'`, no reading a
    sibling project's `build/libs`. A fresh clone on a clean machine must build.
-3. **Do not move the toolchain.** NeoForge 21.1.217 / ModDevGradle 2.0.134 / Gradle 8.8 /
+3. **Do not move the toolchain.** NeoForge 21.1.217 / ModDevGradle 2.0.134 / Gradle 8.14.4 (Nixpkgs `gradle_8`) /
    JDK 21, Minecraft 1.21.1 only. Modrinth and FTB version strings are not semver — a
    "newer" version is often a different Minecraft version.
 4. **Worktrees must not dangle.** If you create one, remove it. `git worktree list` must
