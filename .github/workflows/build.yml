@@ -11,10 +11,10 @@ permissions:
 
 jobs:
   build:
-    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.7.1
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v4.0.0
 
   unit-test:
-    uses: bertie-mc/bertie-ci/.github/workflows/unit-test.yml@v3.7.1
+    uses: bertie-mc/bertie-ci/.github/workflows/unit-test.yml@v4.0.0
 
   gametest:
-    uses: bertie-mc/bertie-ci/.github/workflows/gametest.yml@v3.7.1
+    uses: bertie-mc/bertie-ci/.github/workflows/gametest.yml@v4.0.0
