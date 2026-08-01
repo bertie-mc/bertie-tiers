@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Development has moved to [`bertie-mc/bertie`](https://github.com/bertie-mc/bertie/tree/main/mods/bertie-tiers). This repository is retained read-only for historical tags, releases, and issues.
+
 # Bertie Tiers
 
 One authoritative, data-driven mining-tier system for the Bertie modpack.
