@@ -2,7 +2,6 @@ package com.berlord.bertietiers;
 
 import com.berlord.bertietiers.command.BertieTiersCommand;
 import com.berlord.bertietiers.config.ConfigManager;
-import com.berlord.bertietiers.gametest.BertieTiersGameTests;
 import com.berlord.bertietiers.logic.MiningAuthority;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
@@ -11,7 +10,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
-import net.neoforged.neoforge.event.RegisterGameTestsEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 import org.slf4j.Logger;
@@ -35,12 +33,7 @@ public class BertieTiers {
     public static final String MOD_ID = "bertie_tiers";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public BertieTiers(IEventBus modEventBus) {
-        modEventBus.addListener(BertieTiers::registerGameTests);
-    }
-
-    private static void registerGameTests(RegisterGameTestsEvent event) {
-        event.register(BertieTiersGameTests.class);
+    public BertieTiers(IEventBus ignored) {
     }
 
     /** Game-bus listeners (the default bus). The whole system is logical-server only. */

@@ -1,5 +1,6 @@
 package com.berlord.bertietiers.gametest;
 
+import com.berlord.bertietiers.BertieTiers;
 import com.berlord.bertietiers.config.ConfigException;
 import com.berlord.bertietiers.config.ConfigParser;
 import com.berlord.bertietiers.config.ConfigValidator;
@@ -34,10 +35,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.bus.api.EventPriority;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.common.util.FakePlayer;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.event.RegisterGameTestsEvent;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 
@@ -56,6 +60,7 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
  */
 @GameTestHolder("bertie_tiers")
 @PrefixGameTestTemplate(false)
+@EventBusSubscriber(modid = BertieTiers.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public final class BertieTiersGameTests {
     /** Resolved against the holder namespace: {@code data/bertie_tiers/structure/empty.nbt}. */
     private static final String TEMPLATE = "empty";
@@ -66,6 +71,11 @@ public final class BertieTiersGameTests {
     private static final AtomicBoolean VETO_LISTENER_INSTALLED = new AtomicBoolean();
 
     private BertieTiersGameTests() {}
+
+    @SubscribeEvent
+    public static void register(RegisterGameTestsEvent event) {
+        event.register(BertieTiersGameTests.class);
+    }
 
     private static final String FIXTURE = """
             {

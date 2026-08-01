@@ -225,7 +225,8 @@ shipped config validated both with and without Slag).
 gradle runGameTestServer
 ```
 
-Boots a headless dedicated server and runs 14 GameTests that drive the real
+Boots a headless dedicated server and runs 14 GameTests from the test-only `gameTest`
+source set. Its Java classes and `empty.nbt` fixture are excluded from the release JAR. The tests drive the real
 `ServerPlayerGameMode#destroyBlock` path with a survival fake player and inspect what actually dropped:
 same-tier mines, higher tier mines lower, lower tier gets nothing, an exception grants only its named
 block, an unassigned tool gets nothing, an unlisted block is unchanged, vanilla tags lose in **both**

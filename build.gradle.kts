@@ -36,6 +36,8 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+val gameTest = sourceSets.create("gameTest")
+
 neoForge {
     version = neo_version
 
@@ -51,8 +53,6 @@ neoForge {
         register("server") {
             server()
         }
-        // Headless GameTest run: `gradle runGameTestServer` boots a dedicated server,
-        // executes every @GameTest in the mod and exits non-zero if any of them fail.
         register("gameTestServer") {
             type = "gameTestServer"
         }
@@ -65,13 +65,17 @@ neoForge {
     mods {
         register(mod_id) {
             sourceSet(sourceSets.main.get())
+            sourceSet(gameTest)
         }
     }
+
+    addModdingDependenciesTo(gameTest)
 }
 
+gameTest.compileClasspath += sourceSets.main.get().output
+gameTest.runtimeClasspath += sourceSets.main.get().output
+
 dependencies {
-    // Pure-logic unit tests. The resolver, the config parser/validator and the component
-    // predicate are deliberately free of Minecraft types so they can be tested off-game.
     testImplementation(platform("org.junit:junit-bom:6.1.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
